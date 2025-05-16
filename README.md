@@ -3,7 +3,7 @@ Photometric analysis of Centaurs using ZTF and SAAO data. Includes rotation peri
 
 ## Introduction
 
-Centaurs are small solar system bodies with orbits between Jupiter and Neptune, exhibiting both asteroidand comet-like traits. Their orbits are unstable, lasting only a few million years due to gravitational interactions with giant planets. Close encounters with Jupiter and Saturn can shrink their semi-major axes, increasing solar heating and triggering comet-like activity. Many eventually become Jupiter Family Comets (JFCs) through these orbital shifts. We present a photometric study of Centaurs using ZTF data from SNAPS (Trilling et al. 2023) and new observations from the SAAO 1.9m telescope and the TTT 0.8m telescope. Our analysis includes rotation period determinations, including one previously unreported.
+Centaurs are small solar system bodies with orbits between Jupiter and Neptune, exhibiting both asteroid and comet-like traits. Their orbits are unstable, lasting only a few million years due to gravitational interactions with giant planets. Close encounters with Jupiter and Saturn can shrink their semi-major axes, increasing solar heating and triggering comet-like activity. Many eventually become Jupiter Family Comets (JFCs) through these orbital shifts. We present a photometric study of Centaurs using ZTF data from SNAPS (Trilling et al. 2023) and new observations from the SAAO 1.9m telescope and the TTT 0.8m telescope. Our analysis includes rotation period determinations, including one previously unreported.
 
 ## Project Overview & Steps
 
@@ -45,8 +45,8 @@ This project followed the workflow below:
   │ ├── Lombscargle_Periodograms/  # Periodogram outputs 
   │ └── Stacked_Images/  # Stacked images for Chiron and star
   ├── results/ 
-  │ ├── summary_table.csv # Summary of derived periods and other parameters 
-  │ └── poster/ # LPSC and AAS posters (PDFs) 
+  │ ├── AAS_Poster.md  # Link to AAS iPoster
+  │ └── LPSC_Poster.pdf # LPSC poster pdf
   ├── LICENSE 
   ├── README.md 
   └── requirements.txt # Python package dependencies 
