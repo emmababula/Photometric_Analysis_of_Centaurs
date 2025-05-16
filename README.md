@@ -30,23 +30,20 @@ This project followed the workflow below:
 ## Repository Structure 
 <pre> Photometric_Analysis_of_Centaurs/
   ├── Code/
-  │ ├── Flux_Contour/
-  │ │ └── radial_contour.py
-  │ ├── Folded_Lightcurve/
-  │ │ └── folded_lightcurves.ipynb
-  │ ├── Lightcurve_Generation/
-  │ │ └── lightcurve.ipynb
-  │ ├── Lombscargle_Periodogram/
-  │ │ └── lombscargle.ipynb
-  │ └── Shift_Stack/
-  │ │ └── stacking_median.py
+  │ ├── stacking_median.py  # Shift-and-stack images using median combine for activity detection
+  │ ├── folded_lightcurves.ipynb  # Plots phase-folded lightcurves using derived rotation periods
+  │ ├── lightcurve.ipynb  # Generates raw lightcurves from ZTF photometric data
+  │ ├── lombscargle.ipynb  # Performs Lomb-Scargle periodogram analysis to find rotation periods
+  │ └── radial_contour.py  # Analyzes radial profiles and contours to assess cometary activity
   ├── Data/
   │ ├── FITS_Files/ # Raw and stacked FITS data
   │ └── SNAPS_Data/ # Raw and processed ZTF data
-  ├── plots/ 
-  │ ├── lightcurves/ # Lightcurve plots per object 
-  │ ├── periodograms/ # Periodogram outputs 
-  │ └── activity/ # Coma detection results and stacked images 
+  ├── Plots/ 
+  │ ├── Countour_and_Radial/  # Radial and contour plots for Chiron and star
+  │ ├── Folded_lightcurves/  # Folded lightcurve plots for each object
+  │ ├── Lightcurves/  # Lightcurve plots for each object
+  │ ├── Lombscargle_Periodograms/  # Periodogram outputs 
+  │ └── Stacked_Images/  # Stacked images for Chiron and star
   ├── results/ 
   │ ├── summary_table.csv # Summary of derived periods and other parameters 
   │ └── poster/ # LPSC and AAS posters (PDFs) 
@@ -54,3 +51,47 @@ This project followed the workflow below:
   ├── README.md 
   └── requirements.txt # Python package dependencies 
 </pre>
+
+---
+
+## Key Features
+
+- **Rotational Period Detection** using Lomb-Scargle method  
+- **Activity Analysis** through stacking and PSF comparison  
+- **Multi-source Observations** combining ZTF and SAAO datasets  
+- **Conference-Ready**: Presented at LPSC and AAS  
+
+---
+
+## Requirements (Python)
+- `numpy`, `pandas`, `matplotlib`
+- `astropy`, `scipy`, `photutils`, `sep`, `imageio`
+  
+Install packages with:
+
+```bash
+pip install -r requirements.txt
+```
+---
+
+## Related Presentations
+
+- 56th Lunar and Planetary Science Conference (LPSC)
+- 245th American Astronomical Society (AAS)
+
+Posters are in Results/Posters/.
+
+---
+
+## Author
+
+**Emma Babula**  
+Bachelor of Arts in Astronomy, Lehigh University  
+[LinkedIn](www.linkedin.com/in/emma-babula-8357211bb) | [GitHub](https://github.com/emmababula)
+
+---
+
+## License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
+You may share this work with attribution but may not modify or use it commercially.
